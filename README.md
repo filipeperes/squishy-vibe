@@ -19,4 +19,8 @@ The catalog is deliberately empty until the AliExpress affiliate account and int
 
 ## Deployment
 
-Deploy as a **separate** Vercel project for `squishyvibe.com`, with its own analytics property and environment variables. Do not point the Brazilian domain or its Supabase project here. Confirm domain registration is complete, then configure DNS, verify the site, and submit the sitemap after real products are published.
+Production is deployed as the separate Vercel project `squishy-vibe`. The canonical domain is `https://squishyvibe.com`; `www.squishyvibe.com` permanently redirects to it. GA4 uses the separate `Squishy Vibe` property (`G-JCJV07ESJK`) and loads only after visitor consent.
+
+The Search Console domain property is verified by DNS. Its sitemap is `https://squishyvibe.com/sitemap.xml`. Pages intentionally remain `noindex` while the catalog is empty; remove that setting and resubmit the sitemap after verified offers are published.
+
+Supabase is intentionally deferred while the static catalog needs no database. A separate project would add compute cost to the current Pro organization, and sharing the Brazilian project's credentials would break environment isolation. Add a dedicated project only when a database-backed feature is introduced and budgeted.
