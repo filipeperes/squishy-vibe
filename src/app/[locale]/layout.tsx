@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { AnalyticsConsent } from "@/components/analytics-consent";
 import { copy, isLocale, localeTags, locales } from "@/lib/i18n";
 import "../globals.css";
 
@@ -36,5 +37,6 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     <SiteHeader locale={locale} />
     <main id="content">{children}</main>
     <SiteFooter locale={locale} />
+    <AnalyticsConsent locale={locale} />
   </body></html>;
 }
