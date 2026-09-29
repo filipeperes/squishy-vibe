@@ -32,7 +32,7 @@ export const viewport: Viewport = { themeColor: "#7153e8", width: "device-width"
 export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  return <html lang={localeTags[locale]}><body>
+  return <html lang={localeTags[locale]} data-scroll-behavior="smooth"><body>
     <a className="skip-link" href="#content">Skip to content</a>
     <SiteHeader locale={locale} />
     <main id="content">{children}</main>

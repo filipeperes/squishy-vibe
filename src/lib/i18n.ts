@@ -20,7 +20,7 @@ type Copy = {
   focusThree: string; focusThreeText: string; catalogTitle: string; catalogIntro: string;
   catalogEmpty: string; catalogEmptyText: string; aboutTitle: string; aboutText: string;
   shippingTitle: string; shippingText: string; affiliateNote: string; productDetails: string;
-  viewOffer: string; images: string; shippingCheck: string; back: string;
+  viewOffer: string; images: string; shippingCheck: string; back: string; internationalShipping: string;
 };
 
 export const copy: Record<Locale, Copy> = {
@@ -34,7 +34,7 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "A global guide to squishies", aboutText: "Squishy Vibe helps you discover and compare squishy toys. We are an independent affiliate showcase; each seller handles checkout, shipping, and returns.",
     shippingTitle: "Check delivery before checkout", shippingText: "Availability, destination countries, price, taxes, and shipping time can change. Confirm all details on the seller's product page.",
     affiliateNote: "Some outbound links are affiliate links. We may earn a commission from qualifying purchases at no extra cost to you.",
-    productDetails: "Product details", viewOffer: "View offer at the seller", images: "Product media", shippingCheck: "Confirm shipping to your country on the seller's page.", back: "Back to products",
+    productDetails: "Product details", viewOffer: "View offer at {marketplace}", images: "Product media", shippingCheck: "Confirm shipping to your country on the seller's page.", back: "Back to products", internationalShipping: "International shipping",
   },
   pt: {
     navProducts: "Produtos", navAbout: "Como funciona", language: "Idioma", eyebrow: "Descubra seu próximo favorito",
@@ -46,7 +46,7 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "Um guia global de squishies", aboutText: "A Squishy Vibe ajuda a descobrir e comparar squishies. Somos uma vitrine independente de afiliados; cada loja cuida do pagamento, envio e devoluções.",
     shippingTitle: "Confira a entrega antes de comprar", shippingText: "Disponibilidade, países atendidos, preço, impostos e prazo podem mudar. Confirme tudo na página do vendedor.",
     affiliateNote: "Alguns links são de afiliados. Podemos receber comissão por compras qualificadas, sem custo adicional para você.",
-    productDetails: "Detalhes do produto", viewOffer: "Ver oferta na loja", images: "Mídias do produto", shippingCheck: "Confirme o envio para seu país na loja.", back: "Voltar aos produtos",
+    productDetails: "Detalhes do produto", viewOffer: "Ver oferta na {marketplace}", images: "Mídias do produto", shippingCheck: "Confirme o envio para seu país na loja.", back: "Voltar aos produtos", internationalShipping: "Envio internacional",
   },
   es: {
     navProducts: "Productos", navAbout: "Cómo funciona", language: "Idioma", eyebrow: "Descubre tu próximo favorito",
@@ -58,7 +58,7 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "Una guía global de squishies", aboutText: "Squishy Vibe te ayuda a descubrir y comparar squishies. Somos una vitrina independiente de afiliados; cada tienda gestiona el pago, envío y devoluciones.",
     shippingTitle: "Comprueba la entrega antes de comprar", shippingText: "La disponibilidad, los países de entrega, el precio, los impuestos y los plazos pueden cambiar. Confirma todo en la página del vendedor.",
     affiliateNote: "Algunos enlaces son de afiliados. Podemos recibir una comisión por compras que cumplan los requisitos, sin coste adicional para ti.",
-    productDetails: "Detalles del producto", viewOffer: "Ver oferta en la tienda", images: "Contenido del producto", shippingCheck: "Confirma el envío a tu país en la tienda.", back: "Volver a productos",
+    productDetails: "Detalles del producto", viewOffer: "Ver oferta en {marketplace}", images: "Contenido del producto", shippingCheck: "Confirma el envío a tu país en la tienda.", back: "Volver a productos", internationalShipping: "Envío internacional",
   },
   da: {
     navProducts: "Produkter", navAbout: "Sådan fungerer det", language: "Sprog", eyebrow: "Find din næste favorit",
@@ -70,7 +70,7 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "En global guide til squishies", aboutText: "Squishy Vibe hjælper dig med at opdage og sammenligne squishy legetøj. Vi er en uafhængig affiliate oversigt; sælgeren håndterer betaling, levering og retur.",
     shippingTitle: "Tjek levering før køb", shippingText: "Tilgængelighed, leveringslande, pris, afgifter og leveringstid kan ændre sig. Bekræft alle detaljer hos sælgeren.",
     affiliateNote: "Nogle links er affiliate links. Vi kan modtage provision fra kvalificerede køb uden ekstra omkostninger for dig.",
-    productDetails: "Produktdetaljer", viewOffer: "Se tilbud hos sælgeren", images: "Produktmedier", shippingCheck: "Bekræft levering til dit land hos sælgeren.", back: "Tilbage til produkter",
+    productDetails: "Produktdetaljer", viewOffer: "Se tilbud hos {marketplace}", images: "Produktmedier", shippingCheck: "Bekræft levering til dit land hos sælgeren.", back: "Tilbage til produkter", internationalShipping: "International levering",
   },
   sv: {
     navProducts: "Produkter", navAbout: "Så fungerar det", language: "Språk", eyebrow: "Hitta din nästa favorit",
@@ -82,6 +82,6 @@ export const copy: Record<Locale, Copy> = {
     aboutTitle: "En global guide till squishies", aboutText: "Squishy Vibe hjälper dig att upptäcka och jämföra squishy leksaker. Vi är en oberoende affiliatesida; säljaren hanterar betalning, leverans och returer.",
     shippingTitle: "Kontrollera leverans före köp", shippingText: "Tillgänglighet, leveransländer, pris, skatter och leveranstid kan ändras. Bekräfta alla detaljer hos säljaren.",
     affiliateNote: "Vissa länkar är affiliatelänkar. Vi kan få provision för kvalificerade köp utan extra kostnad för dig.",
-    productDetails: "Produktinformation", viewOffer: "Se erbjudandet hos säljaren", images: "Produktmedia", shippingCheck: "Bekräfta leverans till ditt land hos säljaren.", back: "Tillbaka till produkter",
+    productDetails: "Produktinformation", viewOffer: "Se erbjudandet hos {marketplace}", images: "Produktmedia", shippingCheck: "Bekräfta leverans till ditt land hos säljaren.", back: "Tillbaka till produkter", internationalShipping: "Internationell leverans",
   },
 };

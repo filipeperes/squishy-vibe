@@ -5,6 +5,7 @@ export type Product = {
   slug: string;
   translations: Record<Locale, { title: string; description: string }>;
   seller: string;
+  marketplace: "Shopee" | "AliExpress" | "Amazon";
   affiliateUrl: string;
   shippingVerification: {
     scope: "international";
@@ -30,6 +31,7 @@ export const products: Product[] = [
       sv: { title: "Glittrig dumpling överraskningsbox", description: "En färgglad dumpling squishy som överraskningsprodukt med glitterfinish." },
     },
     seller: "Rio Life Shop",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/7faCBPDe3L",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-824i6-mphwb6gyh8nh8c.webp"],
@@ -44,6 +46,7 @@ export const products: Product[] = [
       sv: { title: "Set med fyra glittriga dumpling squishies", description: "Ett set med fyra färgglada dumpling squishies med glitterdetaljer." },
     },
     seller: "Rio Life Shop",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/5VVhbQLtRw",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-824j8-mphwnj3ds35u65.webp"],
@@ -58,6 +61,7 @@ export const products: Product[] = [
       sv: { title: "Stor glittrig dumpling squishy", description: "En större dumpling squishy i överraskningsbox-stil med glitterfinish." },
     },
     seller: "fnythketdhf3.br",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/5LCHP7MWmv",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-8259x-msnlh4dsopoo29.webp"],
@@ -72,6 +76,7 @@ export const products: Product[] = [
       sv: { title: "Set med två glittriga dumpling squishies", description: "Ett set med två dumpling squishies med glitter och överraskningsbox." },
     },
     seller: "Ba xi 2",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/5q8Y02Kcm2",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-822yb-mofin4h8pfrg38.webp"],
@@ -86,6 +91,7 @@ export const products: Product[] = [
       sv: { title: "Dumpling squishy set med glitter", description: "Ett blandat set dumpling squishies i flera färger och glitterfinish." },
     },
     seller: "tcxjjnsm3.br",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/5fp7njLG71",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-82598-msxyfxrrcikp89.webp"],
@@ -100,6 +106,7 @@ export const products: Product[] = [
       sv: { title: "Mjuk glittrig dumpling i ångkorg", description: "En färgglad glittrig dumpling squishy i en ångkorgsformad box; färgen kan variera." },
     },
     seller: "tjxjlysm2.br",
+    marketplace: "Shopee",
     affiliateUrl: "https://s.shopee.com.br/6AlOOeJM68",
     shippingVerification: { scope: "international", source: "shopee-affiliate-catalog", checkedAt },
     images: ["https://down-bs-br.img.susercontent.com/sg-11134201-82597-msjid7qb3w1ud9.webp"],
