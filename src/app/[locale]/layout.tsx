@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     openGraph: { title: "Squishy Vibe", description: copy[locale].aboutText, siteName: "Squishy Vibe", url: `${siteUrl}/${locale}`, locale: localeTags[locale], type: "website" },
     icons: { icon: "/favicon.svg" },
-    robots: { index: false, follow: true }, // Remove after verified offers are published.
+    robots: { index: true, follow: true },
   };
 }
 
